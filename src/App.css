@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  background-image: url("https://source.unsplash.com/1600x900/?nature");
+  background-size: cover;
+}
+.App {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 20px;
+  min-width: 450px;
+  background-color: rgba(43, 213, 236, 0.85);
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
 }
-
-.App-link {
-  color: #61dafb;
+label {
+  font-family: sans-serif;
+  font-size: 18px;
 }
+label h1{
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid rgb(116, 120, 115);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+}
+label h3{
+  background-color: white;
+  padding: 5px;
+  border-radius: 25px;
+  width: 100%;
+  border: 1px solid rgb(116, 120, 115);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+select {
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
+}
+input {
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
+}
+button {
+  width: 100px;
+  height: 40px; 
+  margin-top: 10px;
+  background-color: #2bd5ec;
+  color: black;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: inset 2px 2px 10px rgba(255,255,255,.1), inset -5px -8px 8px rgba(0,0,0,.2);
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  color: white; 
+}
+.sortedArray {
+  margin-bottom: 10px;
+  border: 1px solid lightblue;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
+}
+.footer {
+position: absolute;
+bottom: 5px;
+font-size: 8px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
